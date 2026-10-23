@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="Suite">
-  <test name="Test">
+<suite parallel="tests" name="Suite" thread-count="3">
+ <listeners>
+        <listener class-name="mavenprojectbhim.SuiteListener"/>
+  </listeners>
+
+  <test name="chrometest">
+ <parameter name="browser" value="chrome"/>
     <classes>
       <class name="mavenprojectbhim.Bhimclass"/>
     </classes>
   </test> <!-- Test -->
+  
+  
 </suite> <!-- Suite -->
