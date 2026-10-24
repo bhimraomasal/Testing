@@ -15,8 +15,7 @@ public class SuiteListener implements IAlterSuiteListener {
 
 for (XmlSuite suite : suites) {
 
-        suite.setParallel(
-        XmlSuite.ParallelMode.getValidParallel(parallelMode));
+        suite.setParallel( XmlSuite.ParallelMode.getValidParallel(parallelMode));
 
         suite.setThreadCount(threadCount);
 

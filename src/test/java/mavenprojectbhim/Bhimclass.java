@@ -7,8 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class Bhimclass extends Basetest {
-	 
-		
+	
+		 
 	
 	@Test
 	public void launch()
